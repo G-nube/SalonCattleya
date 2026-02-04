@@ -137,7 +137,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; <a href="https://barbaralaw.me">2022</a></li>
+							<p>© <span id="current-year"></span> Salón Cattleya</p>
 						</ul>
 					</footer>
 
@@ -151,7 +151,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+  					document.getElementById("current-year").textContent = 
+					new Date().getFullYear();
+			</script>
 	</body>
 </html>
 <!--
